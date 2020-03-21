@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="此软件仅供娱乐!!!"
+        android:paddingTop="20sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#66ccff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20sp"
+        android:text="这里填写发信人号码："
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/sms_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:enabled="true"
+        android:gravity="top"
+        android:minLines="8"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:inputType="number|numberDecimal"
+        android:hint="10086"
+        android:background="@drawable/shape"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这里填写短信内容："
+        android:paddingTop="10dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/sms_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:enabled="true"
+        android:gravity="top"
+        android:minLines="8"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:hint="在吗，快开门，再不开我就。。。"
+        android:background="@drawable/shape"/>
+
+    <Button
+        android:id="@+id/btn_insert_sms"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="插入短信">
+    </Button>
+
+    <!--
+    <Button
+        android:id="@+id/btn_set_sms"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="设为默认短信应用">
+    </Button>
+
+    <Button
+        android:id="@+id/btn_rec_sms"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="还原默认短信应用">
+    </Button>
+    -->
+</LinearLayout>
