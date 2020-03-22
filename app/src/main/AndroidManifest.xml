@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.iakie.testcp">
+    package="com.iakie.smscat">
 
     <uses-permission android:name="android.permission.READ_SMS"/>
     <uses-permission android:name="android.permission.WRITE_SMS"/>
@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.iakie.smscat.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +21,7 @@
         </activity>
         <!-- BroadcastReceiver that listens for incoming SMS messages -->
         <receiver
-            android:name=".sms.SmsReceiver"
+            android:name="com.iakie.smscat.sms.SmsReceiver"
             android:permission="android.permission.BROADCAST_SMS" >
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_DELIVER" />
@@ -29,7 +29,7 @@
         </receiver>
         <!--BroadcastReceiver that listens for incoming MMS messages-->
         <receiver
-            android:name=".sms.MmsReceiver"
+            android:name="com.iakie.smscat.sms.MmsReceiver"
             android:permission="android.permission.BROADCAST_WAP_PUSH" >
             <intent-filter>
                 <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER" />
@@ -39,7 +39,7 @@
         </receiver>
         <!--Activity that allows the user to send new SMS/MMS messages-->
         <activity
-            android:name=".sms.ComposeSmsActivity"
+            android:name="com.iakie.smscat.sms.ComposeSmsActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -57,7 +57,7 @@
         </activity>
         <!--Service that delivers messages from the phone "quick response"-->
         <service
-            android:name=".sms.HeadlessSmsSendService"
+            android:name="com.iakie.smscat.sms.HeadlessSmsSendService"
             android:exported="true"
             android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE" >
             <intent-filter>

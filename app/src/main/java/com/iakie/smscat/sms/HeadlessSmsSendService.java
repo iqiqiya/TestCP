@@ -1,4 +1,4 @@
-package com.iakie.testcp.sms;
+package com.iakie.smscat.sms;
 
 import android.app.Service;
 import android.content.Intent;

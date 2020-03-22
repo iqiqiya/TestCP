@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".MainActivity">
+    tools:context="com.iakie.smscat.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -64,6 +64,26 @@
         android:text="插入短信">
     </Button>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用方法：填入内容，点击插入短信，倒数3秒就好"
+        android:paddingTop="10dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注意：Android4.4版本以上需要需要先设置为短信管理器\n恢复：重新打开系统短信app即可恢复"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开源：https://github.com/iqiqiya/TestCp"
+        android:autoLink="web"
+        android:textColor="#000000"/>
+
     <!--
     <Button
         android:id="@+id/btn_set_sms"
@@ -77,6 +97,5 @@
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:text="还原默认短信应用">
-    </Button>
-    -->
+        -->
 </LinearLayout>
